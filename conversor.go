@@ -45,4 +45,7 @@ func main() {
 
 	}
 
+	funcoes.Soma
 }
+
+
