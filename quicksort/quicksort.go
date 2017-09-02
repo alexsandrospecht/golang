@@ -48,6 +48,6 @@ func particionar(numeros []int, pivo int) (menores []int, maiores []int) {
 			maiores = append(maiores, n)
 		}
 	}
-	
+
 	return menores, maiores
 }
