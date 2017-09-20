@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var i int
 
-	loop:
+loop:
 	for i = 0; i < 10; i++ {
 		fmt.Printf("for i = %d\n", i)
 

@@ -13,4 +13,3 @@ func soma(n, m int) int {
 func main() {
 	imprimirDados("Teste", soma(22, 7))
 }
-

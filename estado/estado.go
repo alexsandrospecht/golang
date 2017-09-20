@@ -10,7 +10,7 @@ func main() {
 	sergipe := estados["SE"]
 
 	saoPaulo, found := estados["SP"]
-	if (found) {
+	if found {
 		fmt.Println(saoPaulo)
 	}
 
@@ -19,14 +19,14 @@ func main() {
 	fmt.Println(sergipe)
 	fmt.Println(estados)
 
-	for sigla, estado  := range estados {
+	for sigla, estado := range estados {
 		fmt.Printf("%s (%s) possui %d habitantes \n", estado.nome, sigla, estado.populacao)
 	}
 
 }
 
 type Estado struct {
-	nome string
+	nome      string
 	populacao int
-	capital string
+	capital   string
 }

@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"strconv"
-	"fmt"
 )
 
 func main() {
@@ -33,7 +33,7 @@ func quicksort(numeros []int) []int {
 
 	indicePivo := len(n) / 2
 	pivo := n[indicePivo]
-	n = append(n[:indicePivo], n[indicePivo + 1:]...)
+	n = append(n[:indicePivo], n[indicePivo+1:]...)
 
 	menores, maiores := particionar(n, pivo)
 

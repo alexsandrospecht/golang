@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -21,7 +21,7 @@ func colherEstatisticas(palavras []string) map[string]int {
 		inicial := strings.ToUpper(string(palavra[0]))
 		contador, encontrado := estatisticas[inicial]
 
-		if (encontrado) {
+		if encontrado {
 			estatisticas[inicial] = contador + 1
 		} else {
 			estatisticas[inicial] = 1

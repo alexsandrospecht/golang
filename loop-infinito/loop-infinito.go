@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
-	"fmt"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 		i := rand.Intn(4200)
 		fmt.Println(i)
 
-		if i % 42 == 0 {
+		if i%42 == 0 {
 			break
 		}
 	}

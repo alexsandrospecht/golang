@@ -33,7 +33,7 @@ func main() {
 }
 
 type Pilha struct {
-	valores [] interface{}
+	valores []interface{}
 }
 
 func (pilha Pilha) Tamanho() int {

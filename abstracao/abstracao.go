@@ -4,7 +4,7 @@ import "fmt"
 
 type ListaGenerica []interface{}
 
-func(lista *ListaGenerica) RemoverIndice(indice int) interface{} {
+func (lista *ListaGenerica) RemoverIndice(indice int) interface{} {
 	l := *lista
 	removido := l[indice]
 	*lista = append(l[0:indice], l[indice+1:]...)
@@ -16,7 +16,7 @@ func (lista *ListaGenerica) RemoverInicio() interface{} {
 }
 
 func (lista *ListaGenerica) RemoverFim() interface{} {
-	return lista.RemoverIndice(len(*lista)-1)
+	return lista.RemoverIndice(len(*lista) - 1)
 }
 
 func main() {
